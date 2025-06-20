@@ -2,4 +2,4 @@ version: 1.0
 runtime: manual
 build:
   context: .
-  dockerfilePath: ./Dockerfile
+  dockerfilePath: ./Dockerfile 
