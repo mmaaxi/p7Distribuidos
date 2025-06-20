@@ -70,4 +70,4 @@ def eliminar_paquete(paquete_id):
     return jsonify({'mensaje': f'Paquete {paquete_id} eliminado exitosamente'}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
