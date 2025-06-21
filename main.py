@@ -68,6 +68,8 @@ def eliminar_paquete(paquete_id):
 
     del paquetes[paquete_id]
     return jsonify({'mensaje': f'Paquete {paquete_id} eliminado exitosamente'}), 200
+import os
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 8080))  # Usa el puerto 8080 por defecto
+    app.run(debug=True, host='0.0.0.0', port=port)
